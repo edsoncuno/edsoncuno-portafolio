@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
 
 :root {
-  --header-height: 5rem;
+  --header-height: 4rem;
+  --margin: 10%;
+  --color1: #f9f7f7;
+  --color2: #dbe2ef;
+  --color3: #3f72af;
+  --color4: #112d4e;
 }
 
 * {

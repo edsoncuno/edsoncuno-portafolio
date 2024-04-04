@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .text1 h1{
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.container .text1 h1 .textCursor {
+  position: absolute;
+  height: 1.5rem;
+  width: 2px;
+  background-color: #000;
+  animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #000;
+  }
+}
+
+.container .text2 {
+  font-size: 1.5rem;
+}
+
+.container .text3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container .text4 {
+  font-size: 1.5rem;
+  color: var(--color3);
+}
+
+/*
+
+.app .greeting .name .containerTypingText {
+  margin-left: 1rem;
+  width: 14rem;
+}
+
+.app .greeting .name .containerTypingText .typingText {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  animation: typing 1.5s steps(20, end), fadeOutBorder 0.5s 1.5s forwards;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fadeOutBorder {
+  0% {
+    border-right-color: black;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+
+*/
