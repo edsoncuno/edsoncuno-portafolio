@@ -1,0 +1,52 @@
+.container {
+  margin-top: 2rem;
+  padding: 0 3%;
+}
+
+.container h2 {
+  font-size: 2rem;
+}
+.container p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.container h3 {
+  margin-top: 1rem;
+}
+
+.container .badges {
+  width: 100%;
+  padding: 0.5rem;
+  display: grid;
+  /*nota: donde dice 8rem es el ancho del item a utilizar*/
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: 0.5rem;
+}
+
+@media (min-width: 320px) {
+  /* mobile */
+  .container {
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 480px) {
+  /* mobile */
+}
+
+@media (min-width: 576px) {
+  /* mobile */
+}
+
+@media (min-width: 768px) {
+  /* tablet */
+}
+
+@media (min-width: 992px) {
+  /* tablet */
+}
+
+@media (min-width: 1200px) {
+  /* dekstop */
+}
