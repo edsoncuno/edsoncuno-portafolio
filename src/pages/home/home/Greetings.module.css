@@ -3,15 +3,15 @@
   flex-direction: column;
 }
 
-.container .text1 h1{
+.container .text1 h1 {
   color: black;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .container .text1 h1 .textCursor {
   position: absolute;
-  height: 1.5rem;
+  height: 2rem;
   width: 2px;
   background-color: #000;
   animation: blink-caret 1s step-end infinite;
@@ -32,23 +32,12 @@
 }
 
 .container .text3 {
-    font-size: 1.5rem;
-    font-weight: bold;
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.container .text4 {
-  font-size: 1.5rem;
-  color: var(--color3);
-}
-
-/*
-
-.app .greeting .name .containerTypingText {
-  margin-left: 1rem;
-  width: 14rem;
-}
-
-.app .greeting .name .containerTypingText .typingText {
+.container .text3 .TypingText {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid black;
@@ -73,5 +62,7 @@
   }
 }
 
-
-*/
+.container .text4 {
+  font-size: 2rem;
+  color: var(--color3);
+}

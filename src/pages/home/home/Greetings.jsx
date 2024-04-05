@@ -9,7 +9,9 @@ export default function App() {
         </h1>
       </div>
       <div className={styles.text2}>¡Hola! Soy</div>
-      <div className={styles.text3}>Edson Cuno</div>
+      <div className={styles.text3}>
+        <div className={styles.TypingText}>Edson Cuno</div>
+      </div>
       <div className={styles.text4}>
         Desarrollador Full Stack y Analista de Datos
       </div>
