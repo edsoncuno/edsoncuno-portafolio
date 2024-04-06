@@ -1,6 +1,6 @@
 .item {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
   transition: box-shadow 0.3s ease-in-out;
   display: flex;
@@ -22,4 +22,12 @@
   text-align: center;
   font-size: 0.8rem;
   text-overflow: ellipsis;
+}
+
+@media (min-width: 320px) {
+  /* mobile */
+  .item {
+    width: 10rem;
+    height: 10rem;
+  }
 }

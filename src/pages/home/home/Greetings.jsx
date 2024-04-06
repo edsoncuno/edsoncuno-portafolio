@@ -15,6 +15,45 @@ export default function App() {
       <div className={styles.text4}>
         Desarrollador Full Stack y Analista de Datos
       </div>
+      <ul className={styles.SocialNetwork}>
+        <li>
+          <a href={"https://github.com/edsoncuno"} target="_blank">
+            <div
+              className={styles.iconGithub}
+              style={{
+                width: "1.5rem",
+                height: "1.5rem",
+                backgroundImage: 'url("/icons/github.svg")',
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                marginRight: "0.5rem",
+              }}
+            ></div>
+            <div>Github</div>
+          </a>
+        </li>
+        <li>
+          <a
+            href={"https://www.linkedin.com/in/edson-diego-cuno-tipso"}
+            target="_blank"
+          >
+            <div
+              className={styles.iconLinkedIn}
+              style={{
+                width: "1.5rem",
+                height: "1.5rem",
+                backgroundImage: 'url("/icons/linkedin.svg")',
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                marginRight: "0.5rem",
+              }}
+            ></div>
+            <div>LinkedIn</div>
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }

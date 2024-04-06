@@ -66,3 +66,29 @@
   font-size: 2rem;
   color: var(--color3);
 }
+
+.container .SocialNetwork {
+  margin-top: 1rem;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.container .SocialNetwork li a {
+  font-size: 1.2rem;
+  color: #3f72af;
+  border: 3px solid var(--color4);
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  transition: hover 0.3s ease-in-out;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.container .SocialNetwork li a:hover {
+  border: 3px solid var(--color3);
+  opacity: 0.9;
+}
