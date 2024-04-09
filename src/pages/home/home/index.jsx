@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-import Greetings from "./Greetings";
+import Greetings from "./greetings";
 
 export default function App() {
   return (

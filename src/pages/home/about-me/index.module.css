@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   margin-top: 2rem;
   padding: 0 3%;
 }
@@ -8,7 +9,7 @@
 }
 .container p {
   font-size: 1.2rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .container h3 {
@@ -16,18 +17,25 @@
 }
 
 .container .badges {
+  margin-top: 0rem;
   width: 100%;
-  padding: 0.5rem;
-  display: grid;
-  /*nota: donde dice 8rem es el ancho del item a utilizar*/
-  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
-  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 320px) {
   /* mobile */
   .container {
     padding: 0 5%;
+  }
+  .container .badges {
+    width: 100%;
+    padding: 0.5rem;
+    display: grid;
+    /*nota: donde dice 8rem es el ancho del item a utilizar*/
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    gap: 0.5rem;
   }
 }
 

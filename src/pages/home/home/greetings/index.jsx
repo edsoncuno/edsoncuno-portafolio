@@ -1,4 +1,4 @@
-import styles from "./Greetings.module.css";
+import styles from "./index.module.css";
 
 export default function App() {
   return (
