@@ -17,7 +17,13 @@ const data = [
       "/icons/left.svg",
       "/icons/left.svg",
     ],
-    images: ["", "", ""],
+    images: [
+      "/images/emco-excel/bg1.jpg",
+      "/images/emco-excel/bg2.jpg",
+      "/images/emco-excel/bg3.jpg",
+      "/images/emco-excel/bg4.jpg",
+      "/images/emco-excel/bg5.png",
+    ],
   },
   {
     name: "Flights AngularJS",

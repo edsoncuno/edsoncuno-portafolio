@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: transparent;
+  border-radius: 15px;
+  background-color: #191919;
+}
+
+.container .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .images .image {
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.6;
+  transition: opacity 0.35s;
+}
+
+.container .images .image:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.container .imageFull {
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .container .images .image {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .container .images .image {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container .images .image {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
