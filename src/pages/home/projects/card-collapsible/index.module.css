@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+}
+
+.container .toggle {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.35s;
+  font-weight: bold;
+}
+
+.container .toggle:hover {
+  background-color: var(--color3);
+}
+
+.container .toggle .icon {
+  width: 1rem;
+  height: 1rem;
+  background-image: url("/icons/down.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .content {
+  height: 0;
+  overflow: hidden;
+
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}

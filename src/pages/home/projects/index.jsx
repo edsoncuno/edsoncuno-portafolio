@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import data from "./data.js";
 import Card from "./card";
+import CardCollapsible from "./card-collapsible";
 
 export default function App() {
   const listCards = data.map((item, index) => (
@@ -19,6 +20,9 @@ export default function App() {
   return (
     <section id="section-projects" className={styles.container}>
       <h2>Proyectos</h2>
+      <div className={styles.cards}>
+        <CardCollapsible title={"Un tittulo"} />
+      </div>
       <p>
         En mi viaje en el mundo de la informática ha estado marcado por una
         serie de proyectos personales que he desarrollado con pasión y
@@ -28,6 +32,9 @@ export default function App() {
         incluyen:
       </p>
       <div className={styles.cards}>{listCards}</div>
+      <div className={styles.cards}>
+        <CardCollapsible title={"Un tittulo"} />
+      </div>
     </section>
   );
 }
