@@ -2,6 +2,8 @@
 import styles from "./index.module.css";
 import { useState } from "react";
 
+import Gallery from "../gallery";
+
 export default function App(props) {
   const [isActive, setIsActive] = useState(false);
 
@@ -19,11 +21,13 @@ export default function App(props) {
             ? {
                 backgroundColor: "#3f72af",
                 color: "white",
+                borderRadius: "0 0 0 0",
+                borderColor: "transparent",
               }
             : {}
         }
       >
-        {props.title}
+        Mostrar Detalle
         <div
           className={styles.icon}
           style={
@@ -41,12 +45,13 @@ export default function App(props) {
           isActive
             ? {
                 height: "auto",
-                border: "1px solid grey",
+                border: "transparent",
               }
             : {}
         }
       >
-        <p style={{ margin: "1rem" }}>asd</p>
+        <p style={{ margin: "1rem" }}>Extra</p>
+        <Gallery images={props.images} />
       </div>
     </article>
   );

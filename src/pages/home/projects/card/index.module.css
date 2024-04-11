@@ -107,7 +107,8 @@
   margin-right: 1rem;
 }
 
-@media (min-width: 320px) {
+.container .extra {
+  width: 100%;
 }
 
 @media (min-width: 480px) {
@@ -115,12 +116,6 @@
     width: 16rem;
     height: 8rem;
   }
-}
-
-@media (min-width: 576px) {
-}
-
-@media (min-width: 768px) {
 }
 
 @media (min-width: 992px) {
@@ -136,7 +131,4 @@
     flex-direction: column;
     align-items: center;
   }
-}
-
-@media (min-width: 1200px) {
 }

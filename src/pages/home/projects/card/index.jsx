@@ -1,5 +1,7 @@
 import styles from "./index.module.css";
 
+import Collapsible from "../collapsible";
+
 export default function App(props) {
   const listIcons = props.icons.map((item, index) => {
     return (
@@ -57,6 +59,7 @@ export default function App(props) {
           )}
         </ul>
       </div>
+      {props.extra && <Collapsible images={props.images} />}
     </article>
   );
 }

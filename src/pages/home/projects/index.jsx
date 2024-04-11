@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import data from "./data.js";
 import Card from "./card";
-import CardCollapsible from "./card-collapsible";
+
 import Gallery from "./gallery";
 
 export default function App() {
@@ -15,15 +15,14 @@ export default function App() {
       hrefRepository={item.hrefRepository}
       hrefDemo={item.hrefDemo}
       hrefDownload={item.hrefDownload}
+      images={item.images}
+      extra={item.extra}
     />
   ));
 
   return (
     <section id="section-projects" className={styles.container}>
       <h2>Proyectos</h2>
-      <div className={styles.cards}>
-        <CardCollapsible title={"Un tittulo"} />
-      </div>
       <p>
         En mi viaje en el mundo de la informática ha estado marcado por una
         serie de proyectos personales que he desarrollado con pasión y
@@ -33,13 +32,6 @@ export default function App() {
         incluyen:
       </p>
       <div className={styles.cards}>{listCards}</div>
-      <div className={styles.cards}>
-        <CardCollapsible title={"Un tittulo"} />
-      </div>
-      <div className={styles.cards}>
-        <Gallery images={data[0].images} />
-      </div>
     </section>
   );
 }
-// {listCards}

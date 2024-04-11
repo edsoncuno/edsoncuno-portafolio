@@ -17,6 +17,7 @@ const data = [
       "/icons/left.svg",
       "/icons/left.svg",
     ],
+    extra: true,
     images: [
       "/images/emco-excel/bg1.jpg",
       "/images/emco-excel/bg2.jpg",
