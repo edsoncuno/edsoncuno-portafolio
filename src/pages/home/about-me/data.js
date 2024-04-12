@@ -12,32 +12,32 @@ const data = {
     },
 
     {
-      url: "./tools/visual-studio-code.svg",
+      url: "/tools/visual-studio-code.svg",
       name: "Visual Studio Code",
       shadowColor: "#0179cb",
     },
     {
-      url: "./tools/microsoft-windows.svg",
+      url: "/tools/microsoft-windows.svg",
       name: "Windows",
       shadowColor: "#00adef",
     },
     {
-      url: "./tools/ubuntu.svg",
+      url: "/tools/ubuntu.svg",
       name: "Ubuntu",
       shadowColor: "#e95420",
     },
     {
-      url: "./tools/archlinux.svg",
+      url: "/tools/archlinux.svg",
       name: "Arch Linux",
       shadowColor: "#1793d1",
     },
     {
-      url: "./tools/git.svg",
+      url: "/tools/git.svg",
       name: "Git",
       shadowColor: "#ee513b",
     },
     {
-      url: "./tools/docker-blue.svg",
+      url: "/tools/docker-blue.svg",
       name: "Docker",
       shadowColor: "#1d63ed",
     },
