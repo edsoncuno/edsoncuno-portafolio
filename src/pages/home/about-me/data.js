@@ -37,7 +37,7 @@ const data = {
       shadowColor: "#ee513b",
     },
     {
-      url: "/tools/docker-blue.svg",
+      url: "/icons/docker-blue.svg",
       name: "Docker",
       shadowColor: "#1d63ed",
     },
