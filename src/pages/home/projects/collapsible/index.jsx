@@ -50,7 +50,7 @@ export default function App(props) {
             : {}
         }
       >
-        <p style={{ margin: "1rem" }}>Extra</p>
+        <p style={{ margin: "1rem" }}>{props.detail}</p>
         <Gallery images={props.images} to={props.to} />
       </div>
     </article>

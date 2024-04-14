@@ -29,6 +29,7 @@ export default function App() {
       images={item.images}
       extra={item.extra}
       to={showModal}
+      detail={item.detalle}
     />
   ));
 
@@ -51,14 +52,6 @@ export default function App() {
           setActiveModal(false);
         }}
       />
-      <button
-        onClick={() => {
-          setUrlModal("/backgrounds/bg1.jpg");
-          setActiveModal(true);
-        }}
-      >
-        Mostrar modal
-      </button>
     </section>
   );
 }
