@@ -28,6 +28,7 @@ const data = [
       "/icons/css3.svg",
       "/icons/javascript.svg",
       "/icons/react.svg",
+      "/icons/vite.svg",
     ],
   },
 ];
