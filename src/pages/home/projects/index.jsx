@@ -1,10 +1,21 @@
+"use client";
+import { useState } from "react";
+
 import styles from "./index.module.css";
 import data from "./data.js";
 import Card from "./card";
 
-import Gallery from "./gallery";
+import ModalImage from "./modal-image";
 
 export default function App() {
+  const [urlModal, setUrlModal] = useState("");
+  const [activeModal, setActiveModal] = useState(false);
+
+  function showModal(url) {
+    setUrlModal(url);
+    setActiveModal(true);
+  }
+
   const listCards = data.map((item, index) => (
     <Card
       key={"id-card-" + index}
@@ -17,6 +28,7 @@ export default function App() {
       hrefDownload={item.hrefDownload}
       images={item.images}
       extra={item.extra}
+      to={showModal}
     />
   ));
 
@@ -32,6 +44,21 @@ export default function App() {
         incluyen:
       </p>
       <div className={styles.cards}>{listCards}</div>
+      <ModalImage
+        url={urlModal}
+        active={activeModal}
+        close={() => {
+          setActiveModal(false);
+        }}
+      />
+      <button
+        onClick={() => {
+          setUrlModal("/backgrounds/bg1.jpg");
+          setActiveModal(true);
+        }}
+      >
+        Mostrar modal
+      </button>
     </section>
   );
 }

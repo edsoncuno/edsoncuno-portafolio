@@ -5,11 +5,11 @@ import styles from "./index.module.css";
 
 export default function App(props) {
   const [active, setActive] = useState(false);
-  const [urlImageFull, setUrlImageFull] = useState();
+  const [url, setUrl] = useState();
 
   useEffect(() => {
     if (Array.isArray(props.images) && props.images.length > 0) {
-      setUrlImageFull(props.images[0]);
+      setUrl(props.images[0]);
     }
   }, [props.images]);
 
@@ -27,18 +27,13 @@ export default function App(props) {
         }}
         onClick={() => {
           setActive(!active);
-          setUrlImageFull(item);
+          setUrl(item);
+          props.to(item)
         }}
       >
-        {active && (
-          <div className={styles.modal}>
-            <img src={urlImageFull} alt="" />
-          </div>
-        )}
       </div>
     ));
   }
-
   return (
     <>
       {listImages && (
@@ -47,7 +42,7 @@ export default function App(props) {
           <div
             className={styles.imageFull}
             style={{
-              backgroundImage: `url("${urlImageFull}")`,
+              backgroundImage: `url("${url}")`,
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",

@@ -27,7 +27,7 @@ export default function App(props) {
             : {}
         }
       >
-        Mostrar Detalle
+        {isActive ? "Ocultar Detalle" : "Mostrar Detalle"}
         <div
           className={styles.icon}
           style={
@@ -51,7 +51,7 @@ export default function App(props) {
         }
       >
         <p style={{ margin: "1rem" }}>Extra</p>
-        <Gallery images={props.images} />
+        <Gallery images={props.images} to={props.to} />
       </div>
     </article>
   );

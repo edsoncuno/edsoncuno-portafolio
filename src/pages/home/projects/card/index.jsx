@@ -59,7 +59,7 @@ export default function App(props) {
           )}
         </ul>
       </div>
-      {props.extra && <Collapsible images={props.images} />}
+      {props.extra && <Collapsible images={props.images} to={props.to} />}
     </article>
   );
 }
