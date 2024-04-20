@@ -22,7 +22,7 @@ const data = [
     description: "Sitio web para una panaderia",
     url: "/icons/my-panaderia.svg",
     hrefRepository: "https://github.com/edsoncuno/frontend-my-panaderia",
-    hrefDemo: "https://frontend-my-panaderia.onrender.com",
+    hrefDemo: "https://frontend-mi-panaderia.onrender.com",
     icons: [
       "/icons/html5.svg",
       "/icons/css3.svg",
