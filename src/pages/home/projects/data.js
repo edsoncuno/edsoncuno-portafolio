@@ -3,6 +3,7 @@ const data = [
     name: "EMCO - Gestión de Inventario",
     description: "Aplicación de gestión de inventario de un almacén de granos.",
     url: "/icons/emco.svg",
+    size: "cover",
     hrefDownload:
       "https://mega.nz/file/sT1DyA6D#qTEAtmzp-yJLf6_osfbz-qcX5sGaHcLpXWP2lZNgEpw",
     icons: ["/icons/microsoft-excel-2019.svg"],
@@ -18,9 +19,25 @@ const data = [
     ],
   },
   {
-    name: "My Panaderia",
+    name: "Mi Maestro",
+    description: "Sitio web para un servicio de reparación y construcción de viviendas.",
+    url: "/icons/mi-maestro.svg",
+    size: "contain",
+    hrefRepository: "https://github.com/edsoncuno/frontend-mi-maestro",
+    hrefDemo: "https://frontend-mi-maestro.onrender.com",
+    icons: [
+      "/icons/html5.svg",
+      "/icons/css3.svg",
+      "/icons/javascript.svg",
+      "/icons/react.svg",
+      "/icons/vite.svg",
+    ],
+  },
+  {
+    name: "Mi Panaderia",
     description: "Sitio web para una panaderia",
-    url: "/icons/my-panaderia.svg",
+    url: "/icons/mi-panaderia.svg",
+    size: "cover",
     hrefRepository: "https://github.com/edsoncuno/frontend-my-panaderia",
     hrefDemo: "https://frontend-mi-panaderia.onrender.com",
     icons: [

@@ -25,7 +25,7 @@ export default function App(props) {
         style={{
           backgroundImage: `url("${props.url}")`,
           backgroundPosition: "center",
-          backgroundSize: "cover",
+          backgroundSize: `${props.size}`,
           backgroundRepeat: "no-repeat",
         }}
       ></div>

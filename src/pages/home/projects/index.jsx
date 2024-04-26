@@ -30,6 +30,7 @@ export default function App() {
       extra={item.extra}
       to={showModal}
       detail={item.detalle}
+      size={item.size}
     />
   ));
 
